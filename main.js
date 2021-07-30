@@ -12,17 +12,17 @@ function getWinner(playerMove, computerMove) {
     }
     else {
         console.log('The player wins');
-        wins += 1
+        wins += 1;
         return "1";
     }
 }
 
-let isConfirmed = true
-let exit = false
-let result = 0
-let wins = 0
-let losses = 0
-let ties = 0
+let isConfirmed = true;
+let exit = false;
+let result = 0;
+let wins = 0;
+let losses = 0;
+let ties = 0;
 
 
 
