@@ -69,3 +69,34 @@ function clickHandler(event) {
     document.querySelector(idsCpu[Math.floor(Math.random() * 3)]).style.display = 'block';
 }
 rock.addEventListener('click', clickHandler);
+
+
+let paper = document.querySelector('#paper');
+console.log(paper);
+function clickHandler2(event) {
+    for (const i in idsCpu) {
+        document.querySelector(idsCpu[i]).style.display = 'none';
+    }
+    for (const i in idsPlayer) {
+        document.querySelector(idsPlayer[i]).style.display = 'none';
+    }
+    document.querySelector('#clippy').style.display = 'block';
+    document.querySelector(idsCpu[Math.floor(Math.random() * 3)]).style.display = 'block';
+}
+paper.addEventListener('click', clickHandler2);
+
+let scissors = document.querySelector('#scissors');
+console.log(scissors);
+function clickHandler3(event) {
+    for (const i in idsCpu) {
+        document.querySelector(idsCpu[i]).style.display = 'none';
+    }
+    for (const i in idsPlayer) {
+        document.querySelector(idsPlayer[i]).style.display = 'none';
+    }
+    document.querySelector('#scissorhands').style.display = 'block';
+    document.querySelector(idsCpu[Math.floor(Math.random() * 3)]).style.display = 'block';
+}
+scissors.addEventListener('click', clickHandler3);
+
+
