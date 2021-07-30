@@ -5,7 +5,7 @@ body {
 
 #playground{
     background-color:white;
-    display: absolute;
+    display: flex;
 }
 
 .player{
@@ -14,7 +14,6 @@ body {
     width: 50%;
     margin:auto;
     display:block;
-    position: absolute;
 }
 
 .computer{
@@ -23,38 +22,37 @@ body {
     width: 50%;    
     margin:auto;
     display:block;
-    position: absolute;
 }
 #therock{
-    position: fixed;
     z-index: 1;
+    display: none;
 }
 #scissorhands{
-    position: fixed;
     z-index: 2;
+    display: none;
 }
 #clippy{
-    position: fixed;
     z-index: 3;
+    display: none;
 }
 #theRockCpu{
-    position: fixed;
     z-index: 1;
+    display: none;
 }
 #scissorHandsCpu{
-    position: fixed;
     z-index: 2;
+    display: none;
 }
 #clippyCpu{
-    position: fixed;
     z-index: 3;
+    display: none;
 }
 
 img{
     height:300px;
-   width:auto; 
-   margin:auto;
-   display:block;
+    width:auto; 
+    margin:auto;
+    display:block;
 }
 
 ul {

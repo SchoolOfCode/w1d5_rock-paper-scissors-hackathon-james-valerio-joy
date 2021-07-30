@@ -53,3 +53,19 @@ Total ties: ${ties}
 Do you want to continue playing?`)
     );
 }
+
+let rock = document.querySelector('#rock');
+console.log(rock);
+let idsPlayer = ['#therock','#clippy','#scissorhands'];
+let idsCpu = ['#theRockCpu', '#clippyCpu', '#scissorHandsCpu'];
+function clickHandler(event) {
+    for (const i in idsCpu) {
+        document.querySelector(idsCpu[i]).style.display = 'none';
+    }
+    for (const i in idsPlayer) {
+        document.querySelector(idsPlayer[i]).style.display = 'none';
+    }
+    document.querySelector('#therock').style.display = 'block';
+    document.querySelector(idsCpu[Math.floor(Math.random() * 3)]).style.display = 'block';
+}
+rock.addEventListener('click', clickHandler);
