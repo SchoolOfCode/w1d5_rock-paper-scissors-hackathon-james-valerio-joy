@@ -1,3 +1,11 @@
+let valid = false
+while(valid === false) {
+    var playerMove = prompt("Please enter rock, paper or scissors:")
+    if(playerMove === "rock" || playerMove === "paper" || playerMove === "scissors") {
+        valid = true
+    }
+}
+
 function getWinner(playerMove, computerMove) {
 
     if (playerMove === computerMove) {
@@ -15,5 +23,6 @@ function getWinner(playerMove, computerMove) {
     }
   }
   
-  let result = getWinner("paper", "paper");
+  let result = getWinner(playerMove, "paper");
+  alert(`Player one Score: ${result}!`)
  
